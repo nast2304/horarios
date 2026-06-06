@@ -148,7 +148,7 @@
 
     <script>
 
-        const API = "https://horarios-7s40.onrender.com/disponibilidad";
+        const API = "http://localhost:8080/disponibilidad";
 
         const dias = [
             "Lunes",
@@ -257,7 +257,7 @@
         async function cargarMaestros() {
 
             const respuesta =
-                await fetch("https://horarios-7s40.onrender.com/maestros");
+                await fetch("http://localhost:8080/maestros");
 
             const maestros = await respuesta.json();
 
@@ -394,4 +394,4 @@
 
 </body>
 
-</html>s
+</html>
